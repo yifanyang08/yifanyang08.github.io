@@ -1,5 +1,5 @@
 ---
-layout: archive
-title: Writing
-permalink: /writing
+layout: page
+title: Research
+permalink: /research
 ---
