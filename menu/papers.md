@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Research
-permalink: /research
+title: Papers
+permalink: /papers
 ---
 
 ## Journal Articles
