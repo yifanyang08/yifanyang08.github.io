@@ -3,7 +3,7 @@ layout: post
 title: "About me"
 author: "Yifan Yang"
 categories: journal
-tags: [documentation,sample]
+tags: [documentation]
 image: dtla.jpg
 ---
 
