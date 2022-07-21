@@ -6,40 +6,22 @@ permalink: /papers
 
 <h3>Journal Articles</h3>
 
-<div style="float: left; width: 8%;">
-<ul> 2022 </ul></div>
-<div style="float: right; width: 92%;">
-<ul> Yang, Yifan. Rapa Nui: a case for correspondence in reduplication. Linguistic Inquiry. doi:10.1162/ling_a_00444</ul></div>
 
-<div style="float: left; width: 8%;">
-<ul> 2021 </ul></div>
-<div style="float: right; width: 92%;">
-<ul> Yang, Yifan, Rachel Walker, Alessandro Vietti & Armin Chiochetti. Ladin, Varieties of Val di Fassa. Journal of the International Phonetic Association. doi:10.1017/S0025100320000262. </ul></div>
+2022. Yang, Yifan. Rapa Nui: a case for correspondence in reduplication. Linguistic Inquiry. doi:10.1162/ling_a_00444</ul></div>
 
-<br>
+2021. Yang, Yifan, Rachel Walker, Alessandro Vietti & Armin Chiochetti. Ladin, Varieties of Val di Fassa. Journal of the International Phonetic Association. doi:10.1017/S0025100320000262.
 
 <h3>Book Chapters</h3>
 
-<div style="float: left; width: 8%;">
-<ul> 2016 </ul></div>
-<div style="float: right; width: 92%;">
-<ul> Zhang, Jisheng & Yifan Yang. 晋豫边界鹤壁地区“子”变韵的音系理据[Phonological evolution of ‘zi’ rime change on the border of Shanxi and Henan Province: A case study of dialects in Hebi]. In Wei Zheng (ed.), 《边界方言语音与音系演变论集》[Phonetic and Phonological Changes on Dialect Boundaries]. Shanghai: 中西书局[Zhongxi Press]. (In Chinese) </ul></div>
+2016. Zhang, Jisheng & Yifan Yang. 晋豫边界鹤壁地区“子”变韵的音系理据[Phonological evolution of ‘zi’ rime change on the border of Shanxi and Henan Province: A case study of dialects in Hebi]. In Wei Zheng (ed.), 《边界方言语音与音系演变论集》[Phonetic and Phonological Changes on Dialect Boundaries]. Shanghai: 中西书局[Zhongxi Press]. (In Chinese)
 
-<br>
+<h3>Conference Proceedings</h3>
 
-### Conference Proceedings
+2018. Yang, Yifan. Quantified exponence constraints and the typology of exponence. In Gillian Gallagher, Maria Gouskova, and Sora Yin (eds.), Supplemental Proceedings of the 2017 Annual Meeting on Phonology. Washington, DC: Linguistic Society of America.
 
-<div style="float: left; width: 8%;">
-<ul> 2018 </ul></div>
-<div style="float: right; width: 92%;">
-<ul> Yang, Yifan. Quantified exponence constraints and the typology of exponence. In Gillian Gallagher, Maria Gouskova, and Sora Yin (eds.), Supplemental Proceedings of the 2017 Annual Meeting on Phonology. Washington, DC: Linguistic Society of America. </ul></div>
+2017. Yang, Yifan and Wei Wei. Verbal reduplication in Mandarin Chinese: An analysis at syntax-phonology interface, In Michael Yoshitaka Erlewine and Yosuke Sato (eds.), Proceedings of GLOWin Asia XI (Vol.1). Cambridge, MA: MITWPL.
 
-<div style="float: left; width: 8%;">
-<ul> 2017 </ul></div>
-<div style="float: right; width: 92%;">
-<ul>Yang, Yifan and Wei Wei. Verbal reduplication in Mandarin Chinese: An analysis at syntax-phonology interface, In Michael Yoshitaka Erlewine and Yosuke Sato (eds.), Proceedings of GLOWin Asia XI (Vol.1). Cambridge, MA: MITWPL.  </ul></div>
-
-### In preparation
+<h3>In preparation</h3>
 
 Yang, Yifan. Mora affixation in non-concatenative morphology. Ms. University of Southern California.
 
