@@ -3,16 +3,26 @@ layout: default
 ---
 
 <article>
-  This is a self introduction
+  I am a Ph.D. Candidate in linguistics at the University of Southern California.
+  I study phonology, the linguistic knowledge of sound patterns,
+  and I explore to what extent this knowledge can be economically represented and computed in the human mind.
+  My research projects involve various Chinese languages/dialects
+  and an under-threat Romance language, Ladin.
+  The data are from my own fieldwork and/or existing corpus.
+
+  Apart from theoretical linguistics, I am also enthusiastic about sociolinguistics.
+  I worked as a teaching assistant at USC for the course Language and Society between 2016 and 2020.
+  Here is how to pronounce my name in Mandarin Chinese: [i˥.fan˧˥.jɑŋ˧˥].
+  
 </article>
 
 <hr>
 
 {% for post in paginator.posts %}
   <div class="posts-container">
-    <h1>
+    <h2>
       <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-    </h1>
+    </h2>
     {% if post.image %}
       <div class="posts-container">
         <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
