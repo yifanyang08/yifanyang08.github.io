@@ -4,7 +4,7 @@ title: Papers
 permalink: /papers
 ---
 
-### Journal Articles
+<h3>Journal Articles</h3>
 
 <div style="float: left; width: 8%;">
 <ul> 2022 </ul></div>
@@ -16,7 +16,7 @@ permalink: /papers
 <div style="float: right; width: 92%;">
 <ul> Yang, Yifan, Rachel Walker, Alessandro Vietti & Armin Chiochetti. Ladin, Varieties of Val di Fassa. Journal of the International Phonetic Association. doi:10.1017/S0025100320000262. </ul></div>
 
-### Book Chapters
+<h3>Book Chapters</h3>
 
 <div style="float: left; width: 8%;">
 <ul> 2016 </ul></div>
