@@ -16,12 +16,16 @@ permalink: /papers
 <div style="float: right; width: 92%;">
 <ul> Yang, Yifan, Rachel Walker, Alessandro Vietti & Armin Chiochetti. Ladin, Varieties of Val di Fassa. Journal of the International Phonetic Association. doi:10.1017/S0025100320000262. </ul></div>
 
+<br>
+
 <h3>Book Chapters</h3>
 
 <div style="float: left; width: 8%;">
 <ul> 2016 </ul></div>
 <div style="float: right; width: 92%;">
 <ul> Zhang, Jisheng & Yifan Yang. 晋豫边界鹤壁地区“子”变韵的音系理据[Phonological evolution of ‘zi’ rime change on the border of Shanxi and Henan Province: A case study of dialects in Hebi]. In Wei Zheng (ed.), 《边界方言语音与音系演变论集》[Phonetic and Phonological Changes on Dialect Boundaries]. Shanghai: 中西书局[Zhongxi Press]. (In Chinese) </ul></div>
+
+<br>
 
 ### Conference Proceedings
 
