@@ -25,3 +25,11 @@ permalink: /papers
 Yang, Yifan. Mora affixation in non-concatenative morphology. Ms. University of Southern California.
 
 Walker, Rachel & Yifan Yang. Consonant phonotactics in Moenat Ladin. To be submitted to Phonological Data and Analysis.
+
+
+<div style="float: left; width: 15%;">
+<ul> 2022 </ul>
+</div>
+<div style="float: right; width: 85%;">
+<ul> Yang, Yifan. Rapa Nui: a case for correspondence in reduplication. Linguistic Inquiry. doi:10.1162/ling_a_00444 </ul>
+</div>
