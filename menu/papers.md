@@ -6,7 +6,6 @@ permalink: /papers
 
 <h3>Journal Articles</h3>
 
-
 2022. Yang, Yifan. Rapa Nui: a case for correspondence in reduplication. Linguistic Inquiry. doi:10.1162/ling_a_00444</ul></div>
 
 2021. Yang, Yifan, Rachel Walker, Alessandro Vietti & Armin Chiochetti. Ladin, Varieties of Val di Fassa. Journal of the International Phonetic Association. doi:10.1017/S0025100320000262.
