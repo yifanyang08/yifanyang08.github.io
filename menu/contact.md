@@ -18,8 +18,6 @@ permalink: /contact
   <img src="assets/img/dtla-2.JPG">
 </div>
 
-<br>
-
 <hr>
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=dddddd&w=300&t=tt&d=yZYBvQctujdjpkiiTD-Twd-r-0W-HljwrlavnbbZCgU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
