@@ -4,4 +4,7 @@ title: CV
 permalink: /cv
 ---
 
-My latest CV can be downloaded here.
+My latest CV can be downloaded <a href="assets/cv/CV_Yifan_Yang.pdf">here</a>.
+
+<iframe src="assets/cv/CV_Yifan_Yang.pdf" width="100%" height="1000px">
+</iframe>
