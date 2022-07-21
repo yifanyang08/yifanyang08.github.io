@@ -8,31 +8,31 @@ layout: default
 
 <article>
 
-<h3>About me</h3>
+<h2>About me</h2>
 
-  <p><font size="-1">I study phonology, the linguistic knowledge of sound patterns,
+  <p>I study phonology, the linguistic knowledge of sound patterns,
   and I explore to what extent this knowledge can be economically represented and computed in the human mind.
   My research projects involve various Chinese languages/dialects
   and an under-threat Romance language, Ladin.
-  The data are from my own fieldwork and/or existing corpus.</font></p>
+  The data are from my own fieldwork and/or existing corpus.</p>
 
   <p><font size="-1">Apart from theoretical linguistics, I am also enthusiastic about sociolinguistics.
   I worked as a teaching assistant at USC for the course Language and Society between 2016 and 2020.
-  </font></p>
+  </p>
 
-  <p><font size="-1">Here is how to pronounce my name in Mandarin Chinese: [i˥.fan˧˥.jɑŋ˧˥].
-  </font></p>
+  <p>Here is how to pronounce my name in Mandarin Chinese: [i˥.fan˧˥.jɑŋ˧˥].
+  </p>
 
 <hr>
 
-  <h3>Research interests</h3>
-  		<h4>General</h4>
+  <h2>Research interests</h2>
+  		<h3>General</h3>
   				<ul>
   					<li>Phonology and its interface with morphology</li>
   					<li>Phonetics</li>
   				</ul>
 
-  		<h4>Specific (Past projects)</h4>
+  		<h3>Specific (Past projects)</h3>
   				<ul>
   					<li>Identity effect in phonology-reduplication interaction</li>
   					<li>Phonetics and phonology of understudied languages</li>
@@ -50,6 +50,7 @@ layout: default
 
 <hr>
 
+<!--
 {% for post in paginator.posts %}
   <div class="posts-container">
     <h2>
@@ -65,9 +66,9 @@ layout: default
       <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
     </p>
   </div>
-{% endfor %}
+{% endfor %} -->
 
-<!-- Pagination links -->
+<!-- Pagination links
 <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
@@ -79,4 +80,4 @@ layout: default
   {% else %}
     <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
   {% endif %}
-</div>
+</div> -->
