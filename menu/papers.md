@@ -4,11 +4,14 @@ title: Papers
 permalink: /papers
 ---
 
-## Journal Articles
+### Journal Articles
 
 2022
 
-## Book Chapters
+### Book Chapters
 
+2016
 
-## Conference Proceedings
+### Conference Proceedings
+
+### In preparation
