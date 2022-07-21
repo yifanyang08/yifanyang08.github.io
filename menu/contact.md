@@ -5,10 +5,14 @@ permalink: /contact
 ---
 
 ### Address: <br>
-3601 Watt Way, GFS 301. Los Angeles, CA, USA. 90089.
+3601 Watt Way, GFS 301. <br>
+Los Angeles, CA, USA. <br>
+90089.
 
 ### Email: <br>
 yfn.yang@outlook.com <br>
+
+<br>
 
 <hr>
 
