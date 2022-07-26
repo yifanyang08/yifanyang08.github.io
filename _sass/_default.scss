@@ -12,26 +12,27 @@
   margin-bottom: 4rem;
 }
 
+
+.container2 {
+  width:auto;
+  height:auto;
+  padding:0%;
+  float:left;
+}
+.imgDetails {
+margin-left:0%;
+margin-top:0%;
+float:left;
+height:auto;
+width:300px;
+}
+
 /*48em*/
 
 @media (max-width: $container-responsive-width) {
   .container {
     width: 90vw;
   }
-}
-
-.imgDetails {
-margin-left:-5%;
-margin-top:5%;
-float:left;
-height:auto;
-width:300px;
-}
-.container2 {
-  width:auto;
-  height:auto;
-  padding:0%;
-  float:left;
 }
 
 /*
