@@ -27,20 +27,6 @@ height:auto;
 width:300px;
 }
 
-.container3 {
-  width:auto;
-  height:auto;
-  padding:0%;
-  float:left;
-}
-.imgDetails3 {
-margin-left:5%;
-margin-top:5%;
-float:right;
-height:auto;
-width:300px;
-}
-
 /*48em*/
 
 @media (max-width: $container-responsive-width) {
@@ -139,4 +125,17 @@ width:300px;
   color: $light-gray-color;
   font-family: $sans-serif-font-family;
   font-size:0.8rem;
+}
+
+/*
+  image-text
+*/
+
+img {
+    display: inline-block;
+    vertical-align: top; /* or top or bottom */
+}
+.text {
+    display: inline-block;
+    vertical-align: top; /* or top or bottom */
 }
