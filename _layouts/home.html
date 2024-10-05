@@ -1,3 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yifan Yang - Linguist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .content img {
+            width: 200px;
+            border-radius: 10px;
+            margin-right: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content p {
+            max-width: 600px;
+            font-size: 1.1em;
+        }
+
+        .highlight-section {
+            padding: 20px;
+            background-color: #fff;
+            border-left: 4px solid #007BFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .content img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .highlight-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yifan Yang</h1>
+        <h2>Linguist</h2>
+        <nav>
+            <a href="#">Papers</a>
+            <a href="#">Presentations</a>
+            <a href="#">CV</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <img src="assets/img/pic-01.jpg" alt="Yifan Yang">
+        <p>I am a recent graduate from the Department of Linguistics, University of Southern California...</p>
+    </div>
+
+    <div class="highlight-section">
+        <h3>Research Interests</h3>
+        <ul>
+            <li>Phonology and its interface with morphology</li>
+            <li>Phonetics</li>
+            <li>Phonology-reduplication interaction</li>
+            <li>Phonetics of understudied languages</li>
+        </ul>
+    </div>
+
+    <footer>
+        I am a member of <a href="#">USC Phonetics and Phonology Group</a> and <a href="#">Language and Computation Lab (ShLAC)</a>.
+    </footer>
+</body>
+</html>
+
+
+<!--
 ---
 layout: default
 ---
