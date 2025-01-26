@@ -27,23 +27,46 @@ height:auto;
 width:auto;
 }*/
 
+.wrapper {
+  display: flex;
+  align-items: flex-start; /* Aligns columns at the top */
+  /* optional spacing, e.g. gap: 2em; */
+}
+
 .container2 {
-  float: left;       /* Keep container on the left side */
+  /* Left column of images */
   width: auto;
-  height: auto;
-  padding: 0;
-  /* If you prefer, you can also do something like
-     width: 30% (or any fixed width) so it’s clearly a column */
+  margin-right: 2em; /* Give some space to the right column if desired */
 }
 
 .imgDetails2 {
-  display: block;    /* Make each figure take up a full "row" */
-  margin-left: 0;    /* Adjust margins as needed */
+  display: block;    /* Each figure stacks vertically */
+  margin-top: 1em;
+  width: auto;
+  height: auto;
+  /* Remove float so they don’t get pushed side by side */
+}
+
+.rightColumn {
+  /* Right column text */
+  flex: 1; /* Let it fill remaining space, if you want */
+}
+
+/*
+.container2 {
+  float: left;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.imgDetails2 {
+  display: block;
+  margin-left: 0;
   margin-top: 3%;
   width: auto;
   height: auto;
-  /* Remove float: left */
-}
+}*/
 
 /*.container3 {
   width:900px;
