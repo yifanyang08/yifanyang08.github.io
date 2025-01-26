@@ -12,7 +12,7 @@
   margin-bottom: 4rem;
 }
 
-.container2 {
+/*.container2 {
   width:auto;
   height:auto;
   padding:0%;
@@ -25,6 +25,24 @@ margin-top:3%;
 float:left;
 height:auto;
 width:auto;
+}*/
+
+.container2 {
+  width: auto;
+  height: auto;
+  padding: 0%;
+  float: left;
+  display: flex;
+  flex-direction: column; /* Ensures elements stack vertically */
+  align-items: center;
+}
+
+.imgDetails2 {
+  margin-left: 0; /* Adjust margins for better alignment */
+  margin-top: 1%; /* Add spacing between images */
+  float: none; /* Remove float to work with flex layout */
+  height: auto;
+  width: auto;
 }
 
 /*.container3 {
