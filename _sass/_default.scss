@@ -36,7 +36,7 @@ width:auto;
 
 .leftColumn {
   flex: 0 0 30%;          /* Make the left column ~30% of the wrapper width */
-  margin: 0;              /* Flush left boundary */
+  margin-top: 3%;              /* Flush left boundary */
   padding: 0;             /* Remove padding if you don’t need it */
   display: flex;
   flex-direction: column; /* So each figure stacks vertically */
