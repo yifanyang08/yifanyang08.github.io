@@ -28,28 +28,28 @@ width:auto;
 }*/
 
 .wrapper {
+  display: flex;          /* Put the left and right columns in a flex container */
+  align-items: flex-start; /* Align them at the top */
+  margin: 0 auto;         /* Center the overall container if you like */
+  max-width: 1200px;      /* Or some suitable max width */
+}
+
+.leftColumn {
+  flex: 0 0 30%;          /* Make the left column ~30% of the wrapper width */
+  margin: 0;              /* Flush left boundary */
+  padding: 0;             /* Remove padding if you don’t need it */
   display: flex;
-  align-items: flex-start; /* Aligns columns at the top */
-  /* optional spacing, e.g. gap: 2em; */
+  flex-direction: column; /* So each figure stacks vertically */
 }
 
-.container2 {
-  /* Left column of images */
-  width: auto;
-  margin-right: 2em; /* Give some space to the right column if desired */
-}
-
-.imgDetails2 {
-  display: block;    /* Each figure stacks vertically */
-  margin-top: 1em;
-  width: auto;
-  height: auto;
-  /* Remove float so they don’t get pushed side by side */
+.imgDetails {
+  margin: 0 0 1em 0;      /* Space out the figures a bit, but remove left margin */
+  display: block;
 }
 
 .rightColumn {
-  /* Right column text */
-  flex: 1; /* Let it fill remaining space, if you want */
+  flex: 1;                /* Let the text column expand to fill remaining space */
+  padding-left: 2em;      /* A little gap between images & text */
 }
 
 /*
