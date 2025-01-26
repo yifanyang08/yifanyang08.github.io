@@ -40,7 +40,7 @@ width:auto;
 .imgDetails2 {
   margin-left: 0; /* Adjust margins for better alignment */
   margin-top: 1%; /* Add spacing between images */
-  float: none; /* Remove float to work with flex layout */
+  float: left; /* Remove float to work with flex layout */
   height: auto;
   width: auto;
 }
