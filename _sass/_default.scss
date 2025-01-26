@@ -33,14 +33,32 @@ width:auto;
   padding:0%;
   float:left;
 }
+
+.image-container {
+  text-align: center;
+  width: 50%; /* Adjust this to control the image size */
+}
+
 .imgDetails3 {
+  width: 100%; /* Ensure the image fits within the container */
+  height: auto;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+}
+
+/*.imgDetails3 {
 margin-left:0%;
 margin-top:3.5%;
 margin-bottom: 5%;
 float:right;
 height:auto;
 width:auto;
-}
+}*/
 
 /*48em*/
 
