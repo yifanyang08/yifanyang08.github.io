@@ -19,7 +19,7 @@ menu:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'orcid', link: 'https://orcid.org/0000-0003-0479-9713'}
-- {icon: 'fa-google-scholar', link: 'https://scholar.google.com/citations?user=sCwe79gAAAAJ&hl=en'}
+- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=sCwe79gAAAAJ&hl=en'}
 #- {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Yifan_Yang35'}
 - {icon: 'linkedin', link: 'http://www.linkedin.com/in/yifanyang08/'}
 #- {icon: 'github', link: 'https://www.github.com/yifanyang08'}
