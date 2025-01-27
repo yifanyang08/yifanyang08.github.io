@@ -43,6 +43,8 @@ width:auto;
 }
 
 .imgDetails {
+  max-width: 100%;
+  height: auto;           /* Keep the image’s aspect ratio */
   margin: 0 0 1em 0;      /* Space out the figures a bit, but remove left margin */
   display: block;
 }
