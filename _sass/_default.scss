@@ -145,30 +145,6 @@ width:auto;
   color: $light-gray-color;
 }
 
-.header {
-  background-image: url('assets/img/elmatador.jpg');  /* Replace with actual path */
-  background-size: cover;       /* Make it cover the area */
-  background-position: center;  /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  color: white;                 /* Optional: improve contrast */
-  padding: 2em;                 /* Add space inside the header */
-  text-align: center;           /* Optional: center content */
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
-  z-index: 1;
-}
-
-.header > * {
-  position: relative;
-  z-index: 2;
-}
 
 /*
   Menu
