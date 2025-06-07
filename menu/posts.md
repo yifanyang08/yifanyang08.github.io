@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: Posts
-permalink: /posts
+permalink: /posts.md 
 ---
 
 Yes, there are several ways to embed a Markdown document into your personal website, depending on how you’ve built your site. Below are common approaches:
