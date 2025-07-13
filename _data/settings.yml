@@ -7,7 +7,7 @@ disqus:
 google-ID: ''
 
 menu:
-#- {name: 'Research', url: 'research.html'}
+- {name: 'Research', url: 'research.html'}
 - {name: 'Papers', url: 'papers.html'}
 - {name: 'Presentations', url: 'presentations.html'}
 #- {name: 'Teaching', url: 'teaching.html'}
