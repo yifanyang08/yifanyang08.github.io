@@ -1,0 +1,171 @@
+- year: 2026
+  title: "Reduplicative identity driven by Surface Correspondence"
+  authors: "Yifan Yang"
+  venue: "Phonology"
+  type: "journal"
+  status: "Published"
+  doi: "https://doi.org/10.1017/S0952675726100414"
+  paper: ""
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  summary: "Argues that reduplicated words need correspondence to explain why related pieces stay similar."
+  featured: true
+
+- year: 2025
+  title: "Temporal coordination in sibilant-stop clusters in Moenat Ladin"
+  authors: "Yifan Yang* and Rachel Walker"
+  venue: "Romance minority languages and linguistic theory (RMLLT), special issue of Isogloss: Open Journal of Romance Linguistics"
+  type: "journal"
+  status: "Published"
+  doi: ""
+  paper: "https://revistes.uab.cat/isogloss/article/view/v11-n3-yang-walker"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  summary: "Uses acoustic timing to connect consonant-cluster phonetics with syllable structure in Moenat Ladin."
+  featured: true
+
+- year: 2024
+  title: "Floating mora affixation in Huozhou diminutive subtraction"
+  authors: "Yifan Yang"
+  venue: "Glossa: A Journal of General Linguistics"
+  type: "journal"
+  status: "Published"
+  doi: ""
+  paper: "https://www.glossa-journal.org/article/id/15130/"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  summary: "Shows how diminutive meaning can be expressed through subtraction, modeled as floating mora affixation."
+  featured: true
+
+- year: 2024
+  title: "Consonant phonotactics in the Moenat variety of Ladin"
+  authors: "Rachel Walker and Yifan Yang"
+  venue: "Italian Journal of Linguistics 36(1)"
+  type: "journal"
+  status: "Published"
+  doi: ""
+  paper: "https://www.italian-journal-linguistics.com/app/uploads/2024/02/Walker-Yang.pdf"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false
+
+- year: 2023
+  title: "Rapa Nui: a case for correspondence in reduplication"
+  authors: "Yifan Yang"
+  venue: "Linguistic Inquiry 54(2), 395-412"
+  type: "journal"
+  status: "Published"
+  doi: "https://doi.org/10.1162/ling_a_00444"
+  paper: "https://direct.mit.edu/ling/article/doi/10.1162/ling_a_00444/107268/Rapa-Nui-A-Case-for-Correspondence-in"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  summary: "Uses Rapa Nui reduplication to argue for correspondence-based identity in phonological theory."
+  featured: true
+
+- year: 2022
+  title: "Ladin, Varieties of Val di Fassa"
+  authors: "Yifan Yang*, Rachel Walker, Alessandro Vietti, and Armin Chiochetti"
+  venue: "Journal of the International Phonetic Association 52(3), 495-520"
+  type: "journal"
+  status: "Published"
+  doi: "https://doi.org/10.1017/S0025100320000262"
+  paper: ""
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false
+
+- year: 2016
+  title: "晋豫边界鹤壁地区“子”变韵的音系理据 [Phonological evolution of 'zi' rime change on the border of Shanxi and Henan Province: A case study of dialects in Hebi]"
+  authors: "Jisheng Zhang and Yifan Yang"
+  venue: "In Wei Zheng (ed.), 边界方言语音与音系演变论集 [Phonetic and Phonological Changes on Dialect Boundaries]. Shanghai: Zhongxi Press. In Chinese."
+  type: "book"
+  status: "Published"
+  doi: ""
+  paper: "/assets/papers/Zhang_Yang_2016.pdf"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false
+
+- year: 2025
+  title: "Temporal organization of prenuclear glides in Hefei Mandarin"
+  authors: "Yifan Yang and Zhiheng Qian"
+  venue: "INTERSPEECH 2025"
+  type: "proceeding"
+  status: "Published"
+  doi: ""
+  paper: "/assets/papers/Yang_Qian_2025.pdf"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false
+
+- year: 2024
+  title: "Dynamic properties of diphthongs in Hefei Mandarin"
+  authors: "Zhiheng Qian, Huifang Kong, and Yifan Yang*"
+  venue: "Proceedings of the National Conference on Man-Machine Speech Communication 2024 (NCMMSC 2024)"
+  type: "proceeding"
+  status: "Published"
+  doi: ""
+  paper: "/assets/papers/Qian_et_al2024.pdf"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false
+
+- year: 2023
+  title: "Temporal Coordination and Markedness in Moenat Ladin Consonant Clusters"
+  authors: "Rachel Walker and Yifan Yang"
+  venue: "Supplemental Proceedings of the 2022 Annual Meeting on Phonology. Washington, DC: Linguistic Society of America."
+  type: "proceeding"
+  status: "Published"
+  doi: ""
+  paper: "/assets/papers/Walker_Yang_2023.pdf"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false
+
+- year: 2018
+  title: "Quantified exponence constraints and the typology of exponence"
+  authors: "Yifan Yang"
+  venue: "Supplemental Proceedings of the 2017 Annual Meeting on Phonology. Washington, DC: Linguistic Society of America."
+  type: "proceeding"
+  status: "Published"
+  doi: ""
+  paper: "/assets/papers/Yifan Yang_AMP_proceedings_submitted.pdf"
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false
+
+- year: 2017
+  title: "Verbal reduplication in Mandarin Chinese: An analysis at syntax-phonology interface"
+  authors: "Yifan Yang and Wei Wei"
+  venue: "Proceedings of GLOW in Asia XI (Vol. 1). Cambridge, MA: MITWPL."
+  type: "proceeding"
+  status: "Published"
+  doi: ""
+  paper: ""
+  slides: ""
+  poster: ""
+  code: ""
+  data: ""
+  featured: false

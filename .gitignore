@@ -1,0 +1,8 @@
+.DS_Store
+.Rhistory
+.Rapp.history
+_site/
+.sass-cache/
+.jekyll-cache/
+.bundle/
+vendor/

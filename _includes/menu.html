@@ -1,10 +1,19 @@
-<div class="menu">
-  <nav class="menu-content">
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
-  </nav>
-  <nav class="social-icons">
-    {% include social-icons.html %}
-  </nav>
-</div>
+<nav class="primary-nav" aria-label="Primary navigation">
+  {% for item in site.data.settings.menu %}
+    {% assign item_path = item.url %}
+    {% assign is_active = false %}
+    {% if page.url == item_path %}
+      {% assign is_active = true %}
+    {% endif %}
+    {% if item_path == '/software/' and page.url contains '/software/' %}
+      {% assign is_active = true %}
+    {% endif %}
+    {% if item_path == '/publications.html' and page.url == '/papers.html' %}
+      {% assign is_active = true %}
+    {% endif %}
+    {% if item_path == '/publications.html' and page.url == '/presentations.html' %}
+      {% assign is_active = true %}
+    {% endif %}
+    <a href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page" class="is-active"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav>

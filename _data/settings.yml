@@ -1,37 +1,18 @@
-# Change 'comments' to true for Disqus comments
-disqus:
-  comments: false
-  disqus_shortname: ''
-
-# If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: ''
 
 menu:
-- {name: 'Research', url: 'research.html'}
-- {name: 'Papers', url: 'papers.html'}
-- {name: 'Presentations', url: 'presentations.html'}
-#- {name: 'Teaching', url: 'teaching.html'}
-#- {name: 'Fieldwork', url: 'fieldwork.html'}
-- {name: 'CV', url: 'cv.html'}
-- {name: 'Contact', url: 'contact.html'}
-#- {name: 'Posts', url: 'posts.html'}
+- {name: 'Research', url: '/research.html'}
+- {name: 'Publications', url: '/publications.html'}
+- {name: 'CV', url: '/cv.html'}
+- {name: 'Contact', url: '/contact.html'}
 
-# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+# Draft pages are kept in the repository and can be restored to the menu when ready.
+# - {name: 'Software & Resources', url: '/software/'}
+# - {name: 'Teaching', url: '/teaching.html'}
+
 social:
-- {icon: 'orcid', link: 'https://orcid.org/0000-0003-0479-9713'}
-#- {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Yifan_Yang35'}
-- {icon: 'google', link: 'https://scholar.google.com/citations?user=sCwe79gAAAAJ&hl=en'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/yifanyang08/'}
-#- {icon: 'github', link: 'https://www.github.com/yifanyang08'}
-#- {icon: 'envelope', link: 'mailto:yfn.yang@outlook.com'}
-
-# Customize site text
-#pagination:
-#  next_page: 'Newer'
-#  previous_page: 'Older'
-
-#sharing_button_prompt: 'Feel free to share!'
-
-#related_posts: 'You may also enjoy:'
-
-#post_date_prefix: 'Written on'
+- {icon: 'orcid', label: 'ORCID', link: 'https://orcid.org/0000-0003-0479-9713'}
+- {icon: 'google-scholar', label: 'Google Scholar', link: 'https://scholar.google.com/citations?user=sCwe79gAAAAJ&hl=en'}
+- {icon: 'linkedin', label: 'LinkedIn', link: 'https://www.linkedin.com/in/yifanyang08/'}
+- {icon: 'github', label: 'GitHub', link: 'https://github.com/yifanyang08'}
+- {icon: 'email', label: 'Email', link: 'mailto:yifanyang@sjtu.edu.cn'}

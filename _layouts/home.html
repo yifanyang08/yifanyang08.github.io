@@ -2,117 +2,73 @@
 layout: default
 ---
 
-<div class="wrapper">
-  <div class="leftColumn">
-    <!-- Left column of images -->
-    <figure class="imgDetails">
-      <img src="assets/img/pic-01.jpg">
-      <figcaption></figcaption>
-    </figure>
-    <!-- ... More figures ... -->
+<section class="hero home-hero">
+  <div class="hero__content">
+    <h1>Yifan Yang</h1>
+    <p class="hero__title">Assistant Professor of Linguistics<br>Shanghai Jiao Tong University</p>
+    <p class="lede">I am a phonologist working at the interface of phonology, phonetics, and morphology. My research focuses on nonconcatenative morphology, reduplication, syllable structure, and the sound patterns of understudied Chinese dialects. I combine formal analysis with linguistic fieldwork and acoustic and articulatory methods. In Mandarin Chinese, my name is pronounced [i˥.fan˧˥.jɑŋ˧˥].</p>
+    <div class="button-row" aria-label="Primary site links">
+      <a class="button" href="{{ '/research.html' | relative_url }}">Research</a>
+      <a class="button" href="{{ '/publications.html' | relative_url }}">Publications</a>
+      <a class="button button--secondary" href="{{ '/assets/cv/CV_Yifan_Yang.pdf' | relative_url }}">Download CV</a>
+    </div>
   </div>
+  <figure class="profile-figure">
+    <picture>
+      <source srcset="{{ '/assets/img/pic-01.webp' | relative_url }}" type="image/webp">
+      <img src="{{ '/assets/img/pic-01.jpg' | relative_url }}" alt="Portrait of Yifan Yang" width="720" height="960" loading="eager">
+    </picture>
+  </figure>
+</section>
 
-  <div class="rightColumn">
-    <!-- Right column text -->
-    <p> My research interest lies in <b>phonological theory
-      and its interface with phonetics and morphology</b>.
-      My work often combines phonological theories
-      with empirical data collected through fieldwork and phonetic analysis,
-      aiming to bridge the theoretical and empirical dimensions of phonology.
-      <!-- After getting my PhD in Linguistics from the University of Southern California, 
-      I am now a tenure-track Assistant Professor at Shanghai Jiao Tong University.-->
-    </p>
-
-    <p> I primarily focus on understudied Chinese dialects,
-      with a particular emphasis on the <b>diminutive</b> patterns:
-      the ways languages modify words to make them sound smaller, cuter, or more affectionate.
-      My fascination with these intricate patterns traces back to
-      the local dialects of my hometown and
-      the nostalgic memories of my grandmother’s words.
-    </p>
-
-    <p>The pronounciation of my name in Mandarin Chinese: [i˥.fan˧˥.jɑŋ˧˥].</p>
+<section class="content-section" aria-labelledby="research-highlights">
+  <div class="section-heading">
+    <p class="eyebrow">Research Highlights</p>
+    <h2 id="research-highlights">Current Lines of Work</h2>
   </div>
-</div>
-
-<!--
-<div class='container2'>
-  <div>
-    <img src="assets/img/pic-03.jpg" class = 'imgDetails2'>
-    <img src="assets/img/pic-01.jpg" class = 'imgDetails2'>
+  <div class="card-grid card-grid--four">
+    <a class="topic-card topic-card--link" href="{{ '/research.html#rime-change' | relative_url }}" aria-label="Read about nonconcatenative morphology and rime change">
+      <h3>Nonconcatenative Morphology</h3>
+      <p>Rime change, diminutive formation, and subtraction patterns in Chinese dialects.</p>
+    </a>
+    <a class="topic-card topic-card--link" href="{{ '/research.html#reduplication' | relative_url }}" aria-label="Read about reduplicative identity">
+      <h3>Reduplicative Identity</h3>
+      <p>Correspondence, Surface Correspondence, and identity effects in reduplication.</p>
+    </a>
+    <a class="topic-card topic-card--link" href="{{ '/research.html#syllable-structure' | relative_url }}" aria-label="Read about syllable structure and temporal coordination">
+      <h3>Syllable Structure</h3>
+      <p>Temporal coordination and acoustic evidence for syllable organization.</p>
+    </a>
+    <a class="topic-card topic-card--link" href="{{ '/research.html#ladin' | relative_url }}" aria-label="Read about Ladin phonetics and phonology">
+      <h3>Ladin Phonetics</h3>
+      <p>Fieldwork-based phonetic and phonological studies of Val di Fassa varieties.</p>
+    </a>
   </div>
+</section>
 
-  <div style = 'margin-left:350px;'>
-    <p> My research interest lies in <b>phonological theory
-      and its interface with phonetics and morphology</b>.
-      My work often combines theoretical frameworks
-      with empirical data collected through fieldwork and phonetic analysis,
-      aiming to bridge the theoretical and empirical dimensions of phonology.
-      After getting my PhD in Linguistics from the University of Southern California,
-        I am now a tenure-track Assistant Professor at
-        Shanghai Jiao Tong University.
-    </p>
-
-    <p> I primarily focus on understudied Chinese dialects,
-      with a particular emphasis on the <b>diminutive</b> patterns:
-      the ways languages modify words to make them sound smaller, cuter, or more affectionate.
-      My fascination with these intricate patterns traces back to
-      the local dialects of my hometown and
-      the nostalgic memories of my grandmother’s words.
-    </p>
-
-    <p>The pronounciation of my name in Mandarin Chinese: [i˥.fan˧˥.jɑŋ˧˥].</p>
-
+<section class="content-section" aria-labelledby="selected-publications">
+  <div class="section-heading section-heading--split">
+    <div>
+      <p class="eyebrow">Selected Publications</p>
+      <h2 id="selected-publications">Representative Work</h2>
+    </div>
+    <a class="text-link" href="{{ '/publications.html' | relative_url }}">View all publications</a>
   </div>
-</div>
--->
-
-<hr>
-
-<ul>
-  <li>Brief overviews of my research topics are available on the <a href="/research.html"><i>Research</i></a> page.</li>
-  <li>Downloadable papers, slides, and posters can be found on <a href="/papers.html"><i>Papers</i></a> and <a href="/presentations.html"><i>Presentations</i></a>. </li>
-  <li>For a complete list of my academic work, please see my <a href="/cv.html"><i>Curriculum Vitae</i></a>.</li>    
-</ul>
-
-<h3>Some themes in my research:</h3>
-  <ul>
-    <li>Diminutive formation</li>
-    <li>Reduplication</li>
-    <li>Nonconcatenative morphology</li>
-    <li>Agreement-by-Correspondence</li>
-    <li>Syllable structure</li>
-  </ul>
-
-
-<!--
-{% for post in paginator.posts %}
-  <div class="posts-container">
-    <h2>
-      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    {% if post.image %}
-      <div class="posts-container">
-        <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
-      </div>
-    {% endif %}
-    <p>
-      {{ post.content | strip_html | truncate: 750 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
-      <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
-    </p>
+  <div class="publication-list publication-list--compact">
+    {% assign featured_publications = site.data.publications | where: 'featured', true | sort: 'year' | reverse %}
+    {% for item in featured_publications limit: 4 %}
+      {% include publication-item.html item=item show_summary=true %}
+    {% endfor %}
   </div>
-{% endfor %} -->
+</section>
 
-<!-- Pagination links
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
-  {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.previous_page }}</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
-  {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
-  {% endif %}
-</div> -->
+<section class="content-section about-section" aria-labelledby="about">
+  <div class="section-heading">
+    <p class="eyebrow">About</p>
+    <h2 id="about">More about me</h2>
+  </div>
+  <div class="readable">
+    <p>My work often combines phonological theories with empirical data collected through fieldwork and phonetic analysis, aiming to bridge the theoretical and empirical dimensions of phonology.</p>
+    <p>I primarily focus on understudied Chinese dialects, with a particular emphasis on diminutive patterns: the ways languages modify words to make them sound smaller, cuter, or more affectionate. My fascination with these intricate patterns traces back to the local dialects of my hometown and the nostalgic memories of my grandmother's words.</p>
+  </div>
+</section>

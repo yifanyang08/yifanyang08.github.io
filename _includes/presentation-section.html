@@ -1,0 +1,12 @@
+{% assign items = site.data.presentations | sort: 'year' | reverse %}
+<section class="content-section" id="talks-posters">
+  <div class="section-heading">
+    <p class="eyebrow">Conference Presentations</p>
+    <h2>Talks & Posters</h2>
+  </div>
+  <div class="publication-list">
+    {% for item in items %}
+      {% include publication-item.html item=item %}
+    {% endfor %}
+  </div>
+</section>

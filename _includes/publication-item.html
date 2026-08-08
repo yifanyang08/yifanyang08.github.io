@@ -1,0 +1,27 @@
+{% assign item = include.item %}
+<article class="publication-item{% if item.featured %} publication-item--featured{% endif %}">
+  <div class="publication-item__year">{{ item.year }}</div>
+  <div class="publication-item__body">
+    <h3>{{ item.title }}</h3>
+    <p class="publication-item__authors">{{ item.authors | replace: 'Yifan Yang', '<strong>Yifan Yang</strong>' }}</p>
+    <p class="publication-item__venue">
+      {% if item.status and item.status != '' %}<span class="status">{{ item.status }}</span>{% endif %}
+      {{ item.venue }}
+    </p>
+    {% if item.details and item.details != '' %}
+      <p class="publication-item__details">{{ item.details }}</p>
+    {% endif %}
+    {% if include.show_summary and item.summary and item.summary != '' %}
+      <p class="publication-item__summary">{{ item.summary }}</p>
+    {% endif %}
+    <div class="publication-item__links" aria-label="Links for {{ item.title }}">
+      {% include resource-link.html url=item.paper label='Paper' %}
+      {% include resource-link.html url=item.doi label='DOI' %}
+      {% include resource-link.html url=item.slides label='Slides' %}
+      {% include resource-link.html url=item.poster label='Poster' %}
+      {% include resource-link.html url=item.references label='References' %}
+      {% include resource-link.html url=item.code label='Code' %}
+      {% include resource-link.html url=item.data label='Data' %}
+    </div>
+  </div>
+</article>

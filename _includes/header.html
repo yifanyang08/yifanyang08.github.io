@@ -1,7 +1,9 @@
-<header class="header">
-  <h3 class="header-title">
-    <a href="{{ site.github.url }}/">{{ site.title }}</a> &nbsp;
-    <small class="header-subtitle">{{ site.description }}</small>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Yifan Yang home">
+      <span class="site-brand__name">Yifan Yang</span>
+      <span class="site-brand__role">Linguistics · SJTU</span>
+    </a>
     {% include menu.html %}
-  </h3>
+  </div>
 </header>

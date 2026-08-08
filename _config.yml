@@ -1,29 +1,27 @@
 # Site Build Settings
+title: "Yifan Yang"
+description: "Assistant Professor of Linguistics at Shanghai Jiao Tong University, working on phonology, phonetics, morphology, reduplication, syllable structure, and understudied Chinese dialects."
+author:
+  name: "Yifan Yang"
+  email: "yifanyang@sjtu.edu.cn"
+url: "https://yifanyang08.github.io"
+baseurl: ""
+lang: "en"
+locale: "en_US"
+logo: "/assets/img/pic-01.jpg"
+image: "/assets/img/pic-01.jpg"
 
-# Jekyll-paginate-v2 configuration
-#  pagination:
-#   enabled: true
-#   per_page: 5
-#   permalink: '/page/:num/'
-#   title: ':title - page :num of :max'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# jekyll-paginate configuration
-paginate:            5
-
-# Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           /:title
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
-
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Yifan Yang'
-description:	       'Ph.D. in Linguistics'
-#author:              'Yifan Yang'
-
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+social:
+  name: "Yifan Yang"
+  links:
+    - "https://orcid.org/0000-0003-0479-9713"
+    - "https://scholar.google.com/citations?user=sCwe79gAAAAJ&hl=en"
+    - "https://www.linkedin.com/in/yifanyang08/"
+    - "https://github.com/yifanyang08"

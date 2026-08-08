@@ -1,0 +1,11 @@
+{% if include.url and include.url != '' %}
+  {% assign href = include.url %}
+  {% assign first_char = href | slice: 0 %}
+  {% if href contains '://' %}
+    <a class="button button--small" href="{{ href }}" target="_blank" rel="noopener noreferrer">{{ include.label }}</a>
+  {% elsif first_char == '/' %}
+    <a class="button button--small" href="{{ href | relative_url }}">{{ include.label }}</a>
+  {% else %}
+    <a class="button button--small" href="{{ href | relative_url }}">{{ include.label }}</a>
+  {% endif %}
+{% endif %}

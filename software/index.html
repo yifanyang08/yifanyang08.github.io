@@ -1,0 +1,54 @@
+---
+layout: page
+title: Software & Resources
+permalink: /software/
+published: false
+description: "Research software, teaching tools, audio demos, and reusable fieldwork or analysis resources."
+---
+
+<section class="content-section" aria-labelledby="software-tools">
+  <div class="section-heading">
+    <p class="eyebrow">Software</p>
+    <h2 id="software-tools">Tools in Development</h2>
+  </div>
+  <div class="card-grid card-grid--two">
+    {% for item in site.data.software %}
+      {% include software-card.html item=item %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section" aria-labelledby="resources">
+  <div class="section-heading">
+    <p class="eyebrow">Resources</p>
+    <h2 id="resources">Audio, Scripts, and Templates</h2>
+  </div>
+  <div class="resource-grid">
+    <article class="resource-card">
+      <span class="status">Available</span>
+      <h3>Huozhou Audio Demos</h3>
+      <p>Demo sound files associated with Huozhou Chinese materials.</p>
+      <a class="button button--small" href="{{ '/assets/Supp_materials/Huozhou_demo.zip' | relative_url }}">Download ZIP</a>
+    </article>
+    <article class="resource-card">
+      <span class="status">Coming soon</span>
+      <h3>Analysis Scripts</h3>
+      <p>Placeholder for public analysis scripts after they are ready for release.</p>
+    </article>
+    <article class="resource-card">
+      <span class="status">Coming soon</span>
+      <h3>Praat/R Templates</h3>
+      <p>Reusable templates for phonetic analysis workflows will be added when public-facing versions are available.</p>
+    </article>
+    <article class="resource-card">
+      <span class="status">Coming soon</span>
+      <h3>MFA Templates</h3>
+      <p>Forced-alignment workflow templates are reserved here for later documentation.</p>
+    </article>
+    <article class="resource-card">
+      <span class="status">Coming soon</span>
+      <h3>Public Datasets</h3>
+      <p>No public dataset link is available yet.</p>
+    </article>
+  </div>
+</section>
