@@ -689,8 +689,8 @@ figcaption {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  height: min(78vh, 960px);
-  min-height: 560px;
+  height: min(1320px, calc((100vw - 2rem) * 1.48));
+  min-height: 960px;
   overflow: hidden;
 }
 
@@ -814,8 +814,8 @@ figcaption {
   }
 
   .pdf-frame {
-    height: 70vh;
-    min-height: 420px;
+    height: min(1120px, calc((100vw - 2rem) * 1.55));
+    min-height: 640px;
   }
 }
 
