@@ -75,6 +75,7 @@ layout: default
   </div>
 </section>
 
+{%- if site.data.settings.show_home_software -%}
 <section class="content-section" aria-labelledby="featured-software">
   <div class="section-heading section-heading--split">
     <div>
@@ -89,6 +90,7 @@ layout: default
     {% endfor %}
   </div>
 </section>
+{%- endif -%}
 
 <section class="content-section about-section" aria-labelledby="about">
   <div class="section-heading">
@@ -147,6 +149,7 @@ layout: default
   </div>
 </section>
 
+{%- if site.data.settings.show_home_contact -%}
 <section class="content-section" aria-labelledby="contact-collaboration">
   <div class="section-heading">
     <p class="eyebrow">{{ t.home.contact_eyebrow }}</p>
@@ -159,3 +162,4 @@ layout: default
     <p class="contact-more-link"><a class="text-link" href="{{ contact_base | relative_url }}">{{ t.home.contact_page_link }}</a></p>
   </div>
 </section>
+{%- endif -%}
