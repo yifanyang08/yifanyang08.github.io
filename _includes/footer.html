@@ -1,6 +1,8 @@
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <p><strong>Yifan Yang</strong> · Assistant Professor of Linguistics, Shanghai Jiao Tong University</p>
+    <p><strong>{{ t.brand_name }}</strong> · {{ t.footer_role }}</p>
     {% include social-icons.html %}
   </div>
 </footer>

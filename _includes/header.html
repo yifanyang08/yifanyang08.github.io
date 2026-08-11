@@ -1,8 +1,12 @@
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
+{%- assign home_url = '/' -%}
+{%- if page_lang == 'zh' -%}{%- assign home_url = '/zh/' -%}{%- endif -%}
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Yifan Yang home">
-      <span class="site-brand__name">Yifan Yang</span>
-      <span class="site-brand__role">Linguistics · SJTU</span>
+    <a class="site-brand" href="{{ home_url | relative_url }}" aria-label="{{ t.home_link_label }}">
+      <span class="site-brand__name">{{ t.brand_name }}</span>
+      <span class="site-brand__role">{{ t.brand_role }}</span>
     </a>
     {% include menu.html %}
   </div>

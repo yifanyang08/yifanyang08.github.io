@@ -1,19 +1,24 @@
-<nav class="primary-nav" aria-label="Primary navigation">
-  {% for item in site.data.settings.menu %}
-    {% assign item_path = item.url %}
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
+<nav class="primary-nav" aria-label="{{ t.nav_label }}">
+  {% for item in site.data.navigation.items %}
+    {% assign item_url = item.url %}
+    {% assign label = item.label_en %}
+    {% if page_lang == 'zh' %}
+      {% assign item_url = item.url_zh %}
+      {% assign label = item.label_zh %}
+    {% endif %}
     {% assign is_active = false %}
-    {% if page.url == item_path %}
+    {% if page.url == item.url or page.url == item.url_zh %}
       {% assign is_active = true %}
     {% endif %}
-    {% if item_path == '/software/' and page.url contains '/software/' %}
+    {% if item.key == 'software' and page.url contains '/software/' %}
       {% assign is_active = true %}
     {% endif %}
-    {% if item_path == '/publications.html' and page.url == '/papers.html' %}
+    {% if item.key == 'publications' and page.url == '/papers.html' or item.key == 'publications' and page.url == '/presentations.html' %}
       {% assign is_active = true %}
     {% endif %}
-    {% if item_path == '/publications.html' and page.url == '/presentations.html' %}
-      {% assign is_active = true %}
-    {% endif %}
-    <a href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page" class="is-active"{% endif %}>{{ item.name }}</a>
+    <a href="{{ item_url | relative_url }}"{% if is_active %} aria-current="page" class="is-active"{% endif %}>{{ label }}</a>
   {% endfor %}
+  {% include language-switcher.html %}
 </nav>

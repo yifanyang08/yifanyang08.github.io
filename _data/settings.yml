@@ -1,15 +1,5 @@
 google-ID: ''
 
-menu:
-- {name: 'Research', url: '/research.html'}
-- {name: 'Publications', url: '/publications.html'}
-- {name: 'CV', url: '/cv.html'}
-- {name: 'Contact', url: '/contact.html'}
-
-# Draft pages are kept in the repository and can be restored to the menu when ready.
-# - {name: 'Software & Resources', url: '/software/'}
-# - {name: 'Teaching', url: '/teaching.html'}
-
 social:
 - {icon: 'orcid', label: 'ORCID', link: 'https://orcid.org/0000-0003-0479-9713'}
 - {icon: 'google-scholar', label: 'Google Scholar', link: 'https://scholar.google.com/citations?user=sCwe79gAAAAJ&hl=en'}

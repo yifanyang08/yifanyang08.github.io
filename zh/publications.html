@@ -1,0 +1,24 @@
+---
+layout: page
+title: 发表成果
+permalink: /zh/publications/
+lang: zh
+translation_key: publications
+locale: zh_CN
+description: "期刊论文、书籍章节、会议论文、报告与海报，以及可下载的研究资料。"
+---
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n['en'] -%}
+
+<nav class="anchor-nav" aria-label="发表成果栏目">
+  <a href="#journal-articles">{{ t.publications.anchor_journal }}</a>
+  <a href="#book-chapters">{{ t.publications.anchor_book }}</a>
+  <a href="#conference-proceedings">{{ t.publications.anchor_proceedings }}</a>
+  <a href="#talks-posters">{{ t.publications.anchor_talks }}</a>
+</nav>
+
+<p class="note">{{ t.publications.note }}</p>
+
+{% include publication-section.html type='journal' id='journal-articles' eyebrow=t.publications.journal_eyebrow title=t.publications.journal_title %}
+{% include publication-section.html type='book' id='book-chapters' eyebrow=t.publications.book_eyebrow title=t.publications.book_title %}
+{% include publication-section.html type='proceeding' id='conference-proceedings' eyebrow=t.publications.proceedings_eyebrow title=t.publications.proceedings_title %}
+{% include presentation-section.html %}

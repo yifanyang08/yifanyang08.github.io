@@ -1,27 +1,35 @@
-{% assign item = include.item %}
+{%- assign item = include.item -%}
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
 <article class="publication-item{% if item.featured %} publication-item--featured{% endif %}">
   <div class="publication-item__year">{{ item.year }}</div>
   <div class="publication-item__body">
     <h3>{{ item.title }}</h3>
     <p class="publication-item__authors">{{ item.authors | replace: 'Yifan Yang', '<strong>Yifan Yang</strong>' }}</p>
     <p class="publication-item__venue">
-      {% if item.status and item.status != '' %}<span class="status">{{ item.status }}</span>{% endif %}
+      {% if item.status and item.status != '' %}
+        {% assign status_key = item.status | downcase | replace: ' ', '_' %}
+        <span class="status">{{ t.status[status_key] | default: item.status }}</span>
+      {% endif %}
       {{ item.venue }}
     </p>
     {% if item.details and item.details != '' %}
       <p class="publication-item__details">{{ item.details }}</p>
     {% endif %}
-    {% if include.show_summary and item.summary and item.summary != '' %}
-      <p class="publication-item__summary">{{ item.summary }}</p>
+    {% if include.show_summary %}
+      {% if page_lang == 'zh' %}{% assign summary = item.summary_zh %}{% else %}{% assign summary = item.summary %}{% endif %}
+      {% if summary and summary != '' %}
+        <p class="publication-item__summary">{{ summary }}</p>
+      {% endif %}
     {% endif %}
     <div class="publication-item__links" aria-label="Links for {{ item.title }}">
-      {% include resource-link.html url=item.paper label='Paper' %}
-      {% include resource-link.html url=item.doi label='DOI' %}
-      {% include resource-link.html url=item.slides label='Slides' %}
-      {% include resource-link.html url=item.poster label='Poster' %}
-      {% include resource-link.html url=item.references label='References' %}
-      {% include resource-link.html url=item.code label='Code' %}
-      {% include resource-link.html url=item.data label='Data' %}
+      {% include resource-link.html url=item.paper label=t.publications.link_paper %}
+      {% include resource-link.html url=item.doi label=t.publications.link_doi %}
+      {% include resource-link.html url=item.slides label=t.publications.link_slides %}
+      {% include resource-link.html url=item.poster label=t.publications.link_poster %}
+      {% include resource-link.html url=item.references label=t.publications.link_references %}
+      {% include resource-link.html url=item.code label=t.publications.link_code %}
+      {% include resource-link.html url=item.data label=t.publications.link_data %}
     </div>
   </div>
 </article>

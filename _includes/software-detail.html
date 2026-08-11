@@ -1,12 +1,44 @@
-{% assign software = site.data.software | where: 'id', page.software_id | first %}
+{%- assign software = site.data.software | where: 'id', page.software_id | first -%}
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
+{%- if page_lang == 'zh' -%}
+  {%- assign name = software.name_zh | default: software.name -%}
+  {%- assign summary = software.summary_zh | default: software.summary -%}
+  {%- assign overview = software.overview_zh | default: software.overview -%}
+  {%- assign motivation = software.motivation_zh | default: software.motivation -%}
+  {%- assign features = software.features_zh | default: software.features -%}
+  {%- assign tags = software.tags_zh | default: software.tags -%}
+  {%- assign requirements = software.requirements_zh | default: software.requirements -%}
+  {%- assign download = software.download_zh | default: software.download -%}
+  {%- assign documentation = software.documentation_zh | default: software.documentation -%}
+  {%- assign privacy = software.privacy_zh | default: software.privacy -%}
+  {%- assign version = software.version_zh | default: software.version -%}
+  {%- assign license = software.license_zh | default: software.license -%}
+  {%- assign citation = software.citation_zh | default: software.citation -%}
+{%- else -%}
+  {%- assign name = software.name -%}
+  {%- assign summary = software.summary -%}
+  {%- assign overview = software.overview -%}
+  {%- assign motivation = software.motivation -%}
+  {%- assign features = software.features -%}
+  {%- assign tags = software.tags -%}
+  {%- assign requirements = software.requirements -%}
+  {%- assign download = software.download -%}
+  {%- assign documentation = software.documentation -%}
+  {%- assign privacy = software.privacy -%}
+  {%- assign version = software.version -%}
+  {%- assign license = software.license -%}
+  {%- assign citation = software.citation -%}
+{%- endif -%}
+{%- assign status_key = software.status | downcase | replace: ' ', '_' -%}
 <article class="software-detail">
   <section class="hero hero--compact">
     <div>
-      <p class="eyebrow">{{ software.status }}</p>
-      <h1>{{ software.name }}</h1>
-      <p class="lede">{{ software.summary }}</p>
+      <p class="eyebrow">{{ t.status[status_key] | default: software.status }}</p>
+      <h1>{{ name }}</h1>
+      <p class="lede">{{ summary }}</p>
       <div class="tag-row">
-        {% for tag in software.tags %}
+        {% for tag in tags %}
           <span class="tag">{{ tag }}</span>
         {% endfor %}
       </div>
@@ -15,27 +47,27 @@
 
   <section class="content-section" id="overview">
     <div class="section-heading">
-      <p class="eyebrow">Overview</p>
-      <h2>What It Is For</h2>
+      <p class="eyebrow">{{ t.software.overview_eyebrow }}</p>
+      <h2>{{ t.software.overview_heading }}</h2>
     </div>
-    <p>{{ software.overview }}</p>
+    <p>{{ overview }}</p>
   </section>
 
   <section class="content-section" id="motivation">
     <div class="section-heading">
-      <p class="eyebrow">Motivation</p>
-      <h2>Why It Exists</h2>
+      <p class="eyebrow">{{ t.software.motivation_eyebrow }}</p>
+      <h2>{{ t.software.motivation_heading }}</h2>
     </div>
-    <p>{{ software.motivation }}</p>
+    <p>{{ motivation }}</p>
   </section>
 
   <section class="content-section" id="features">
     <div class="section-heading">
-      <p class="eyebrow">Features</p>
-      <h2>Core Workflow</h2>
+      <p class="eyebrow">{{ t.software.features_eyebrow }}</p>
+      <h2>{{ t.software.features_heading }}</h2>
     </div>
     <ul class="feature-list">
-      {% for feature in software.features %}
+      {% for feature in features %}
         <li>{{ feature }}</li>
       {% endfor %}
     </ul>
@@ -43,42 +75,42 @@
 
   <section class="content-section" id="screenshots">
     <div class="section-heading">
-      <p class="eyebrow">Screenshots</p>
-      <h2>Interface Preview</h2>
+      <p class="eyebrow">{{ t.software.screenshots_eyebrow }}</p>
+      <h2>{{ t.software.screenshots_heading }}</h2>
     </div>
     <div class="placeholder-panel">
-      <p>Coming soon.</p>
+      <p>{{ t.software.screenshots_placeholder }}</p>
     </div>
   </section>
 
   <section class="content-section detail-grid" id="requirements">
     <div>
-      <h2>Requirements</h2>
-      <p>{{ software.requirements }}</p>
+      <h2>{{ t.software.field_requirements }}</h2>
+      <p>{{ requirements }}</p>
     </div>
     <div>
-      <h2>Download</h2>
-      <p>{{ software.download }}</p>
+      <h2>{{ t.software.field_download }}</h2>
+      <p>{{ download }}</p>
     </div>
     <div>
-      <h2>Documentation</h2>
-      <p>{{ software.documentation }}</p>
+      <h2>{{ t.software.field_documentation }}</h2>
+      <p>{{ documentation }}</p>
     </div>
     <div>
-      <h2>Privacy</h2>
-      <p>{{ software.privacy }}</p>
+      <h2>{{ t.software.field_privacy }}</h2>
+      <p>{{ privacy }}</p>
     </div>
     <div>
-      <h2>Version</h2>
-      <p>{{ software.version }}</p>
+      <h2>{{ t.software.field_version }}</h2>
+      <p>{{ version }}</p>
     </div>
     <div>
-      <h2>License</h2>
-      <p>{{ software.license }}</p>
+      <h2>{{ t.software.field_license }}</h2>
+      <p>{{ license }}</p>
     </div>
     <div>
-      <h2>Citation</h2>
-      <p>{{ software.citation }}</p>
+      <h2>{{ t.software.field_citation }}</h2>
+      <p>{{ citation }}</p>
     </div>
   </section>
 </article>

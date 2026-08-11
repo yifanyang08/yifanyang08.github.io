@@ -1,47 +1,60 @@
 ---
 layout: default
 ---
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
+{%- assign research_base = '/research.html' -%}
+{%- assign publications_base = '/publications.html' -%}
+{%- assign software_base = '/software/' -%}
+{%- assign contact_base = '/contact.html' -%}
+{%- if page_lang == 'zh' -%}
+  {%- assign research_base = '/zh/research/' -%}
+  {%- assign publications_base = '/zh/publications/' -%}
+  {%- assign software_base = '/zh/software/' -%}
+  {%- assign contact_base = '/zh/contact/' -%}
+{%- endif -%}
 
 <section class="hero home-hero">
   <div class="hero__content">
-    <h1>Yifan Yang</h1>
-    <p class="hero__title">Assistant Professor of Linguistics<br>Shanghai Jiao Tong University</p>
-    <p class="lede">I am a phonologist working at the interface of phonology, phonetics, and morphology. My research focuses on nonconcatenative morphology, reduplication, syllable structure, and the sound patterns of understudied Chinese dialects. I combine formal analysis with linguistic fieldwork and acoustic and articulatory methods. In Mandarin Chinese, my name is pronounced [i˥.fan˧˥.jɑŋ˧˥].</p>
-    <div class="button-row" aria-label="Primary site links">
-      <a class="button" href="{{ '/research.html' | relative_url }}">Research</a>
-      <a class="button" href="{{ '/publications.html' | relative_url }}">Publications</a>
-      <a class="button button--secondary" href="{{ '/assets/cv/CV_Yifan_Yang.pdf' | relative_url }}">CV</a>
+    <h1>{{ t.brand_name }}</h1>
+    <p class="hero__title">{{ t.home.hero_role }}</p>
+    <p class="lede">{{ t.home.hero_lede }}</p>
+    <div class="button-row" aria-label="{{ t.home.hero_buttons_label }}">
+      <a class="button" href="{{ research_base | relative_url }}">{{ t.home.btn_research }}</a>
+      <a class="button" href="{{ publications_base | relative_url }}">{{ t.home.btn_publications }}</a>
+      <a class="button" href="{{ software_base | relative_url }}">{{ t.home.btn_software }}</a>
+      <a class="button button--secondary" href="{{ '/assets/cv/CV_Yifan_Yang.pdf' | relative_url }}">{{ t.home.btn_cv }}</a>
     </div>
   </div>
   <figure class="profile-figure">
     <picture>
       <source srcset="{{ '/assets/img/pic-01.webp' | relative_url }}" type="image/webp">
-      <img src="{{ '/assets/img/pic-01.jpg' | relative_url }}" alt="Portrait of Yifan Yang" width="720" height="960" loading="eager">
+      <img src="{{ '/assets/img/pic-01.jpg' | relative_url }}" alt="{{ t.home.profile_alt }}" width="720" height="960" loading="eager">
     </picture>
   </figure>
 </section>
 
 <section class="content-section" aria-labelledby="research-highlights">
   <div class="section-heading">
-    <p class="eyebrow">Research Highlights</p>
-    <h2 id="research-highlights">Current Lines of Work</h2>
+    <p class="eyebrow">{{ t.home.highlights_eyebrow }}</p>
+    <h2 id="research-highlights">{{ t.home.highlights_heading }}</h2>
   </div>
   <div class="card-grid card-grid--four">
-    <a class="topic-card topic-card--link" href="{{ '/research.html#rime-change' | relative_url }}" aria-label="Read about nonconcatenative morphology and rime change">
-      <h3>Nonconcatenative Morphology</h3>
-      <p>Rime change, diminutive formation, and subtraction patterns in Chinese dialects.</p>
+    <a class="topic-card topic-card--link" href="{{ research_base | relative_url }}#rime-change" aria-label="{{ t.home.card_nonconcatenative_label }}">
+      <h3>{{ t.home.card_nonconcatenative_title }}</h3>
+      <p>{{ t.home.card_nonconcatenative_text }}</p>
     </a>
-    <a class="topic-card topic-card--link" href="{{ '/research.html#reduplication' | relative_url }}" aria-label="Read about reduplicative identity">
-      <h3>Reduplicative Identity</h3>
-      <p>Correspondence, Surface Correspondence, and identity effects in reduplication.</p>
+    <a class="topic-card topic-card--link" href="{{ research_base | relative_url }}#reduplication" aria-label="{{ t.home.card_reduplication_label }}">
+      <h3>{{ t.home.card_reduplication_title }}</h3>
+      <p>{{ t.home.card_reduplication_text }}</p>
     </a>
-    <a class="topic-card topic-card--link" href="{{ '/research.html#syllable-structure' | relative_url }}" aria-label="Read about syllable structure and temporal coordination">
-      <h3>Syllable Structure</h3>
-      <p>Temporal coordination and acoustic evidence for syllable organization.</p>
+    <a class="topic-card topic-card--link" href="{{ research_base | relative_url }}#syllable-structure" aria-label="{{ t.home.card_syllable_label }}">
+      <h3>{{ t.home.card_syllable_title }}</h3>
+      <p>{{ t.home.card_syllable_text }}</p>
     </a>
-    <a class="topic-card topic-card--link" href="{{ '/research.html#ladin' | relative_url }}" aria-label="Read about Ladin phonetics and phonology">
-      <h3>Ladin Phonetics</h3>
-      <p>Fieldwork-based phonetic and phonological studies of Val di Fassa varieties.</p>
+    <a class="topic-card topic-card--link" href="{{ research_base | relative_url }}#ladin" aria-label="{{ t.home.card_ladin_label }}">
+      <h3>{{ t.home.card_ladin_title }}</h3>
+      <p>{{ t.home.card_ladin_text }}</p>
     </a>
   </div>
 </section>
@@ -49,10 +62,10 @@ layout: default
 <section class="content-section" aria-labelledby="selected-publications">
   <div class="section-heading section-heading--split">
     <div>
-      <p class="eyebrow">Selected Publications</p>
-      <h2 id="selected-publications">Representative Work</h2>
+      <p class="eyebrow">{{ t.home.selected_eyebrow }}</p>
+      <h2 id="selected-publications">{{ t.home.selected_heading }}</h2>
     </div>
-    <a class="text-link" href="{{ '/publications.html' | relative_url }}">View all publications</a>
+    <a class="text-link" href="{{ publications_base | relative_url }}">{{ t.home.selected_view_all }}</a>
   </div>
   <div class="publication-list publication-list--compact">
     {% assign featured_publications = site.data.publications | where: 'featured', true | sort: 'year' | reverse %}
@@ -62,60 +75,87 @@ layout: default
   </div>
 </section>
 
+<section class="content-section" aria-labelledby="featured-software">
+  <div class="section-heading section-heading--split">
+    <div>
+      <p class="eyebrow">{{ t.home.software_eyebrow }}</p>
+      <h2 id="featured-software">{{ t.home.software_heading }}</h2>
+    </div>
+    <a class="text-link" href="{{ software_base | relative_url }}">{{ t.home.software_view_all }}</a>
+  </div>
+  <div class="card-grid card-grid--two">
+    {% for item in site.data.software %}
+      {% include software-card.html item=item %}
+    {% endfor %}
+  </div>
+</section>
+
 <section class="content-section about-section" aria-labelledby="about">
   <div class="section-heading">
-    <h2 id="about">More about me</h2>
+    <h2 id="about">{{ t.home.about_heading }}</h2>
   </div>
   <div class="readable">
-    <p>My work often combines phonological theories with empirical data collected through fieldwork and phonetic analysis, aiming to bridge the theoretical and empirical dimensions of phonology.</p>
-    <p>I primarily focus on understudied Chinese dialects, with a particular emphasis on diminutive patterns: the ways languages modify words to make them sound smaller, cuter, or more affectionate. My fascination with these intricate patterns traces back to the local dialects of my hometown and the nostalgic memories of my grandmother's words.</p>
+    <p>{{ t.home.about_p1 }}</p>
+    <p>{{ t.home.about_p2 }}</p>
   </div>
 </section>
 
 <section class="content-section photo-gallery-section" aria-labelledby="gallery">
   <div class="section-heading">
-    <h2 id="gallery">Fieldwork Places and More</h2>
-    <p class="section-subtitle">
-      Places, people, and moments behind my fieldwork and research.
-    </p>  </div>
-  <div class="photo-gallery" aria-label="Selected photos">
+    <h2 id="gallery">{{ t.home.gallery_heading }}</h2>
+    <p class="section-subtitle">{{ t.home.gallery_subtitle }}</p>
+  </div>
+  <div class="photo-gallery" aria-label="{{ t.home.gallery_heading }}">
     <figure class="gallery-item">
       <picture>
         <source srcset="{{ '/assets/img/val_di_fassa.webp' | relative_url }}" type="image/webp">
-        <img src="{{ '/assets/img/val_di_fassa.JPG' | relative_url }}" alt="Landscape view in Val di Fassa" width="4032" height="3024" loading="lazy">
+        <img src="{{ '/assets/img/val_di_fassa.JPG' | relative_url }}" alt="{{ t.home.gallery_val_di_fassa }}" width="4032" height="3024" loading="lazy">
       </picture>
-      <figcaption>Val di Fassa</figcaption>
+      <figcaption>{{ t.home.gallery_val_di_fassa }}</figcaption>
     </figure>
     <figure class="gallery-item">
       <picture>
         <source srcset="{{ '/assets/img/moena.webp' | relative_url }}" type="image/webp">
-        <img src="{{ '/assets/img/moena.JPG' | relative_url }}" alt="Moena in the Fassa Valley" width="3950" height="2962" loading="lazy">
+        <img src="{{ '/assets/img/moena.JPG' | relative_url }}" alt="{{ t.home.gallery_moena }}" width="3950" height="2962" loading="lazy">
       </picture>
-      <figcaption>Moena</figcaption>
+      <figcaption>{{ t.home.gallery_moena }}</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/huojia.jpeg' | relative_url }}" alt="Huojia" width="1749" height="1049" loading="lazy">
-      <figcaption>Huojia (获嘉东城后村)</figcaption>
+      <img src="{{ '/assets/img/huojia.jpeg' | relative_url }}" alt="{{ t.home.gallery_huojia }}" width="1749" height="1049" loading="lazy">
+      <figcaption>{{ t.home.gallery_huojia }}</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/Huozhou.jpeg' | relative_url }}" alt="Huozhou" width="1749" height="1049" loading="lazy">
-      <figcaption>Huozhou (霍州鼓楼)</figcaption>
+      <img src="{{ '/assets/img/Huozhou.jpeg' | relative_url }}" alt="{{ t.home.gallery_huozhou }}" width="1749" height="1049" loading="lazy">
+      <figcaption>{{ t.home.gallery_huozhou }}</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/bailong.jpeg' | relative_url }}" alt="Huozhou Bailong" width="1749" height="1049" loading="lazy">
-      <figcaption>Huozhou Bailong (霍州白龙镇)</figcaption>
+      <img src="{{ '/assets/img/bailong.jpeg' | relative_url }}" alt="{{ t.home.gallery_bailong }}" width="1749" height="1049" loading="lazy">
+      <figcaption>{{ t.home.gallery_bailong }}</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/yuncheng.jpeg' | relative_url }}" alt="Yuncheng" width="1749" height="1049" loading="lazy">
-      <figcaption>Yuncheng (运城)</figcaption>
+      <img src="{{ '/assets/img/yuncheng.jpeg' | relative_url }}" alt="{{ t.home.gallery_yuncheng }}" width="1749" height="1049" loading="lazy">
+      <figcaption>{{ t.home.gallery_yuncheng }}</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/interspeech2025.jpeg' | relative_url }}" alt="Interspeech" width="1749" height="1049" loading="lazy">
-      <figcaption>Interspeech 2025</figcaption>
+      <img src="{{ '/assets/img/interspeech2025.jpeg' | relative_url }}" alt="{{ t.home.gallery_interspeech }}" width="1749" height="1049" loading="lazy">
+      <figcaption>{{ t.home.gallery_interspeech }}</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/elmatador.jpeg' | relative_url }}" alt="elmatador" width="1749" height="1049" loading="lazy">
-      <figcaption>El Matador</figcaption>
+      <img src="{{ '/assets/img/elmatador.jpg' | relative_url }}" alt="{{ t.home.gallery_elmatador }}" width="1749" height="1049" loading="lazy">
+      <figcaption>{{ t.home.gallery_elmatador }}</figcaption>
     </figure>
+  </div>
+</section>
+
+<section class="content-section" aria-labelledby="contact-collaboration">
+  <div class="section-heading">
+    <p class="eyebrow">{{ t.home.contact_eyebrow }}</p>
+    <h2 id="contact-collaboration">{{ t.home.contact_heading }}</h2>
+  </div>
+  <div class="readable">
+    <p>{{ t.home.contact_text }}</p>
+    <p><a href="mailto:yifanyang@sjtu.edu.cn">yifanyang@sjtu.edu.cn</a> · <a href="mailto:yfn.yang@outlook.com">yfn.yang@outlook.com</a></p>
+    {% include social-icons.html %}
+    <p class="contact-more-link"><a class="text-link" href="{{ contact_base | relative_url }}">{{ t.home.contact_page_link }}</a></p>
   </div>
 </section>

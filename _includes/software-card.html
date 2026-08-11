@@ -1,12 +1,25 @@
-{% assign item = include.item %}
+{%- assign item = include.item -%}
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
+{%- assign name = item.name -%}
+{%- assign summary = item.summary -%}
+{%- assign detail_url = item.url -%}
+{%- assign tags = item.tags -%}
+{%- if page_lang == 'zh' -%}
+  {%- assign name = item.name_zh | default: item.name -%}
+  {%- assign summary = item.summary_zh | default: item.summary -%}
+  {%- assign detail_url = item.url_zh | default: item.url -%}
+  {%- assign tags = item.tags_zh | default: item.tags -%}
+{%- endif -%}
+{%- assign status_key = item.status | downcase | replace: ' ', '_' -%}
 <article class="software-card">
   <div class="software-card__meta">
-    <span class="status">{{ item.status }}</span>
-    {% for tag in item.tags limit: 3 %}
+    <span class="status">{{ t.status[status_key] | default: item.status }}</span>
+    {% for tag in tags limit: 3 %}
       <span class="tag">{{ tag }}</span>
     {% endfor %}
   </div>
-  <h3>{{ item.name }}</h3>
-  <p>{{ item.summary }}</p>
-  <a class="text-link" href="{{ item.url | relative_url }}">View details</a>
+  <h3>{{ name }}</h3>
+  <p>{{ summary }}</p>
+  <a class="text-link" href="{{ detail_url | relative_url }}">{{ t.software.view_details }}</a>
 </article>

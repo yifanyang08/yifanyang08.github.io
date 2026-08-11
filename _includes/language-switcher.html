@@ -1,0 +1,37 @@
+{%- assign page_lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
+{%- if page_lang == 'zh' -%}
+  {%- assign alt_lang = 'en' -%}
+  {%- assign en_url = '/' -%}
+  {%- assign zh_url = page.url -%}
+{%- else -%}
+  {%- assign alt_lang = 'zh' -%}
+  {%- assign en_url = page.url -%}
+  {%- assign zh_url = '/zh/' -%}
+{%- endif -%}
+{%- if page.translation_key -%}
+  {%- for p in site.pages -%}
+    {%- unless p.published == false -%}
+      {%- if p.translation_key == page.translation_key and p.lang == alt_lang -%}
+        {%- if alt_lang == 'en' -%}{%- assign en_url = p.url -%}{%- else -%}{%- assign zh_url = p.url -%}{%- endif -%}
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+<div class="language-switcher" role="group" aria-label="{{ t.switcher.label }}">
+  <a class="language-switcher__link{% if page_lang == 'en' %} is-active{% endif %}" href="{{ en_url | relative_url }}" lang="en" hreflang="en"{% if page_lang == 'en' %} aria-current="true"{% endif %} data-lang="en">EN</a>
+  <span class="language-switcher__divider" aria-hidden="true">|</span>
+  <a class="language-switcher__link{% if page_lang == 'zh' %} is-active{% endif %}" href="{{ zh_url | relative_url }}" lang="zh-CN" hreflang="zh-CN"{% if page_lang == 'zh' %} aria-current="true"{% endif %} data-lang="zh">中文</a>
+</div>
+<script>
+  (function () {
+    var switcher = document.querySelector('.language-switcher');
+    if (!switcher) return;
+    switcher.addEventListener('click', function (event) {
+      var link = event.target.closest('a[data-lang]');
+      if (link) {
+        localStorage.setItem('site-lang', link.getAttribute('data-lang'));
+      }
+    });
+  })();
+</script>

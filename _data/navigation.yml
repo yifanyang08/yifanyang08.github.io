@@ -1,0 +1,22 @@
+# Shared bilingual navigation. Labels and URLs are selected by page.lang in _includes/menu.html.
+items:
+  - key: research
+    url: /research.html
+    url_zh: /zh/research/
+    label_en: Research
+    label_zh: 研究方向
+  - key: publications
+    url: /publications.html
+    url_zh: /zh/publications/
+    label_en: Publications
+    label_zh: 发表成果
+  - key: cv
+    url: /cv.html
+    url_zh: /zh/cv/
+    label_en: CV
+    label_zh: 简历
+  - key: contact
+    url: /contact.html
+    url_zh: /zh/contact/
+    label_en: Contact
+    label_zh: 联系方式

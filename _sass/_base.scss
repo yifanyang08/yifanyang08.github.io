@@ -10,7 +10,7 @@
   --sage: #52796F;
   --shadow: 0 18px 45px rgba(23, 32, 42, 0.08);
   --content-width: 900px;
-  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
@@ -30,6 +30,9 @@ body {
   font-size: 17px;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
+}
+html[lang="zh-CN"] body {
+  line-height: 1.75;
 }
 
 body,
@@ -837,3 +840,46 @@ figcaption {
     font-size: 1rem;
     line-height: 1.6;
   }
+.language-switcher {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.15rem;
+  margin-left: 0.5rem;
+  padding: 0.15rem;
+  white-space: nowrap;
+}
+
+.language-switcher__link {
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.35rem 0.45rem;
+  text-decoration: none;
+}
+
+.language-switcher__link:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.language-switcher__link.is-active {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+.language-switcher__divider {
+  color: var(--border);
+  font-size: 0.82rem;
+}
+
+.contact-more-link {
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 680px) {
+  .language-switcher {
+    margin-left: 0;
+  }
+}
