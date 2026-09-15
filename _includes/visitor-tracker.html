@@ -1,0 +1,21 @@
+<script>
+  (function () {
+    if (window.location.hostname !== 'yifanyang08.github.io') {
+      return;
+    }
+
+    fetch('https://site-visitor-tracker.yyf890812.workers.dev/track', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        page: window.location.pathname,
+        referrer: document.referrer || null
+      }),
+      keepalive: true
+    }).catch(function () {
+      // Analytics failure must never affect the website.
+    });
+  })();
+</script>
