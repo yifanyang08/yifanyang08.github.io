@@ -400,10 +400,8 @@ td {
 }
 
 .topic-card,
-.software-card,
 .resource-card,
 .contact-panel,
-.placeholder-panel,
 .publication-item {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -411,10 +409,8 @@ td {
 }
 
 .topic-card,
-.software-card,
 .resource-card,
-.contact-panel,
-.placeholder-panel {
+.contact-panel {
   padding: 1.2rem;
 }
 
@@ -450,13 +446,11 @@ td {
 }
 
 .topic-card p,
-.software-card p,
 .resource-card p {
   color: var(--muted);
   margin-bottom: 0.8rem;
 }
 
-.software-card__meta,
 .tag-row {
   align-items: center;
   display: flex;
@@ -639,31 +633,6 @@ figcaption {
 .note {
   background: transparent;
   color: var(--muted);
-}
-
-.software-detail {
-  max-width: var(--content-width);
-}
-
-.detail-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.detail-grid > div {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.1rem;
-}
-
-.placeholder-panel {
-  min-height: 220px;
-  align-items: center;
-  color: var(--muted);
-  display: flex;
-  justify-content: center;
 }
 
 .contact-layout {

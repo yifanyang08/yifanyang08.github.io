@@ -5,7 +5,6 @@ layout: default
 {%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
 {%- assign research_base = '/research.html' -%}
 {%- assign publications_base = '/publications.html' -%}
-{%- assign software_base = '/software/' -%}
 {%- assign contact_base = '/contact.html' -%}
 
 <section class="hero home-hero">
@@ -68,23 +67,6 @@ layout: default
   </div>
 </section>
 
-{%- if site.data.settings.show_home_software -%}
-<section class="content-section" aria-labelledby="featured-software">
-  <div class="section-heading section-heading--split">
-    <div>
-      <p class="eyebrow">{{ t.home.software_eyebrow }}</p>
-      <h2 id="featured-software">{{ t.home.software_heading }}</h2>
-    </div>
-    <a class="text-link" href="{{ software_base | relative_url }}">{{ t.home.software_view_all }}</a>
-  </div>
-  <div class="card-grid card-grid--two">
-    {% for item in site.data.software %}
-      {% include software-card.html item=item %}
-    {% endfor %}
-  </div>
-</section>
-{%- endif -%}
-
 <section class="content-section photo-gallery-section" aria-labelledby="gallery">
   <div class="section-heading">
     <h2 id="gallery">{{ t.home.gallery_heading }}</h2>
@@ -92,52 +74,46 @@ layout: default
   </div>
   <div class="photo-gallery" aria-label="{{ t.home.gallery_heading }}">
     <figure class="gallery-item">
-      <picture>
-        <source srcset="{{ '/assets/img/val_di_fassa.webp' | relative_url }}" type="image/webp">
-        <img src="{{ '/assets/img/val_di_fassa.JPG' | relative_url }}" alt="{{ t.home.gallery_val_di_fassa }}" width="4032" height="3024" loading="lazy">
-      </picture>
+      <img src="{{ '/assets/img/val_di_fassa.webp' | relative_url }}" alt="{{ t.home.gallery_val_di_fassa }}" width="1200" height="900" loading="lazy">
       <figcaption>Val di Fassa</figcaption>
     </figure>
     <figure class="gallery-item">
-      <picture>
-        <source srcset="{{ '/assets/img/moena.webp' | relative_url }}" type="image/webp">
-        <img src="{{ '/assets/img/moena.JPG' | relative_url }}" alt="{{ t.home.gallery_moena }}" width="3950" height="2962" loading="lazy">
-      </picture>
+      <img src="{{ '/assets/img/moena.webp' | relative_url }}" alt="{{ t.home.gallery_moena }}" width="1200" height="900" loading="lazy">
       <figcaption>Moena</figcaption>
     </figure>
 
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/guanyu.JPG' | relative_url }}" alt="{{ t.home.gallery_guanyu }}" width="1749" height="1049" loading="lazy">
+      <img src="{{ '/assets/img/guanyu.webp' | relative_url }}" alt="{{ t.home.gallery_guanyu }}" width="1200" height="900" loading="lazy">
       <figcaption>Temple of Guanyu (关帝庙)</figcaption>
     </figure>
 
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/xiaxian.JPG' | relative_url }}" alt="{{ t.home.gallery_xiaxian }}" width="1749" height="1049" loading="lazy">
+      <img src="{{ '/assets/img/xiaxian.webp' | relative_url }}" alt="{{ t.home.gallery_xiaxian }}" width="1200" height="900" loading="lazy">
       <figcaption>Xiaxian (夏县)</figcaption>
     </figure>
 
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/xiaxian_confucius.JPG' | relative_url }}" alt="{{ t.home.gallery_xiaxian_confucius }}" width="1749" height="1049" loading="lazy">
+      <img src="{{ '/assets/img/xiaxian_confucius.webp' | relative_url }}" alt="{{ t.home.gallery_xiaxian_confucius }}" width="1200" height="900" loading="lazy">
       <figcaption>Temple of Confucius, Xiaxian (夏县孔庙)</figcaption>
     </figure>
 
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/xiaxian_opera.JPG' | relative_url }}" alt="{{ t.home.gallery_xiaxian_opera }}" width="1749" height="1049" loading="lazy">
+      <img src="{{ '/assets/img/xiaxian_opera.webp' | relative_url }}" alt="{{ t.home.gallery_xiaxian_opera }}" width="1200" height="900" loading="lazy">
       <figcaption>A community performance in Xiaxian</figcaption>
     </figure>
 
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/Huozhou.jpeg' | relative_url }}" alt="{{ t.home.gallery_huozhou }}" width="1749" height="1049" loading="lazy">
+      <img src="{{ '/assets/img/Huozhou.webp' | relative_url }}" alt="{{ t.home.gallery_huozhou }}" width="1200" height="900" loading="lazy">
       <figcaption>Huozhou (霍州鼓楼)</figcaption>
     </figure>
 
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/bailong.jpeg' | relative_url }}" alt="{{ t.home.gallery_bailong }}" width="1749" height="1049" loading="lazy">
+      <img src="{{ '/assets/img/bailong.webp' | relative_url }}" alt="{{ t.home.gallery_bailong }}" width="1200" height="900" loading="lazy">
       <figcaption>Huozhou Bailong (霍州白龙镇)</figcaption>
     </figure>
 
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/interspeech2025.jpeg' | relative_url }}" alt="{{ t.home.gallery_interspeech }}" width="1749" height="1049" loading="lazy">
+      <img src="{{ '/assets/img/interspeech2025.webp' | relative_url }}" alt="{{ t.home.gallery_interspeech }}" width="1200" height="900" loading="lazy">
       <figcaption>Interspeech 2025</figcaption>
     </figure>
 

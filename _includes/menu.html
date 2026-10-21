@@ -8,9 +8,6 @@
     {% if page.url == item.url %}
       {% assign is_active = true %}
     {% endif %}
-    {% if item.key == 'software' and page.url contains '/software/' %}
-      {% assign is_active = true %}
-    {% endif %}
     {% if item.key == 'publications' and page.url == '/papers.html' or item.key == 'publications' and page.url == '/presentations.html' %}
       {% assign is_active = true %}
     {% endif %}
