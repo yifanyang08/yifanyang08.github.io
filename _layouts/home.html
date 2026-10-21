@@ -7,12 +7,6 @@ layout: default
 {%- assign publications_base = '/publications.html' -%}
 {%- assign software_base = '/software/' -%}
 {%- assign contact_base = '/contact.html' -%}
-{%- if page_lang == 'zh' -%}
-  {%- assign research_base = '/zh/research/' -%}
-  {%- assign publications_base = '/zh/publications/' -%}
-  {%- assign software_base = '/zh/software/' -%}
-  {%- assign contact_base = '/zh/contact/' -%}
-{%- endif -%}
 
 <section class="hero home-hero">
   <div class="hero__content">
@@ -90,16 +84,6 @@ layout: default
   </div>
 </section>
 {%- endif -%}
-
-<section class="content-section about-section" aria-labelledby="about">
-  <div class="section-heading">
-    <h2 id="about">{{ t.home.about_heading }}</h2>
-  </div>
-  <div class="readable">
-    <p>{{ t.home.about_p1 }}</p>
-    <p>{{ t.home.about_p2 }}</p>
-  </div>
-</section>
 
 <section class="content-section photo-gallery-section" aria-labelledby="gallery">
   <div class="section-heading">

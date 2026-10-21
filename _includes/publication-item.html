@@ -17,7 +17,7 @@
       <p class="publication-item__details">{{ item.details }}</p>
     {% endif %}
     {% if include.show_summary %}
-      {% if page_lang == 'zh' %}{% assign summary = item.summary_zh %}{% else %}{% assign summary = item.summary %}{% endif %}
+      {% assign summary = item.summary %}
       {% if summary and summary != '' %}
         <p class="publication-item__summary">{{ summary }}</p>
       {% endif %}

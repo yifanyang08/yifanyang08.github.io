@@ -1,20 +1,5 @@
 {%- assign page_lang = page.lang | default: site.lang -%}
 {%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
-{%- assign alt_lang = 'zh' -%}
-{%- if page_lang == 'zh' -%}{%- assign alt_lang = 'en' -%}{%- endif -%}
-{%- assign alt_lang_attr = 'zh-CN' -%}
-{%- if alt_lang == 'en' -%}{%- assign alt_lang_attr = 'en' -%}{%- endif -%}
-{%- assign alt_url = '/' -%}
-{%- if alt_lang == 'zh' -%}{%- assign alt_url = '/zh/' -%}{%- endif -%}
-{%- if page.translation_key -%}
-  {%- for p in site.pages -%}
-    {%- unless p.published == false -%}
-      {%- if p.translation_key == page.translation_key and p.lang == alt_lang -%}
-        {%- assign alt_url = p.url -%}
-      {%- endif -%}
-    {%- endunless -%}
-  {%- endfor -%}
-{%- endif -%}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,29 +10,8 @@
   {% include visitor-tracker.html %}
   {% seo %}
   <link rel="alternate" hreflang="{{ t.html_lang }}" href="{{ page.url | absolute_url }}">
-  <link rel="alternate" hreflang="{{ alt_lang_attr }}" href="{{ alt_url | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
-  <meta property="og:locale" content="{% if page_lang == 'zh' %}zh_CN{% else %}en_US{% endif %}">
-  <meta property="og:locale:alternate" content="{% if page_lang == 'zh' %}en_US{% else %}zh_CN{% endif %}">
-  {% if page_lang == 'zh' %}
-  <!-- TODO(confirm): 正式中文职称与院系名称待用户确认后再更新 Schema 信息。 -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "杨一帆",
-      "alternateName": "Yifan Yang",
-      "jobTitle": "语言学助理教授",
-      "affiliation": {
-        "@type": "CollegeOrUniversity",
-        "name": "上海交通大学"
-      },
-      "url": "{{ site.url }}{{ site.baseurl }}/zh/",
-      "email": "mailto:yifanyang@sjtu.edu.cn",
-      "sameAs": {{ site.social.links | jsonify }}
-    }
-  </script>
-  {% else %}
+  <meta property="og:locale" content="en_US">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -64,5 +28,4 @@
       "sameAs": {{ site.social.links | jsonify }}
     }
   </script>
-  {% endif %}
 </head>

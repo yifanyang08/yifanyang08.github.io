@@ -4,12 +4,8 @@
   {% for item in site.data.navigation.items %}
     {% assign item_url = item.url %}
     {% assign label = item.label_en %}
-    {% if page_lang == 'zh' %}
-      {% assign item_url = item.url_zh %}
-      {% assign label = item.label_zh %}
-    {% endif %}
     {% assign is_active = false %}
-    {% if page.url == item.url or page.url == item.url_zh %}
+    {% if page.url == item.url %}
       {% assign is_active = true %}
     {% endif %}
     {% if item.key == 'software' and page.url contains '/software/' %}
@@ -20,7 +16,4 @@
     {% endif %}
     <a href="{{ item_url | relative_url }}"{% if is_active %} aria-current="page" class="is-active"{% endif %}>{{ label }}</a>
   {% endfor %}
-  {%- if site.data.settings.show_language_switcher -%}
-    {% include language-switcher.html %}
-  {%- endif -%}
 </nav>

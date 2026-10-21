@@ -1,7 +1,6 @@
 {%- assign page_lang = page.lang | default: site.lang -%}
 {%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
 {%- assign home_url = '/' -%}
-{%- if page_lang == 'zh' -%}{%- assign home_url = '/zh/' -%}{%- endif -%}
 <header class="site-header">
   <div class="site-header__inner">
     <a class="site-brand" href="{{ home_url | relative_url }}" aria-label="{{ t.home_link_label }}">

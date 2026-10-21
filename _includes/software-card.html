@@ -5,12 +5,6 @@
 {%- assign summary = item.summary -%}
 {%- assign detail_url = item.url -%}
 {%- assign tags = item.tags -%}
-{%- if page_lang == 'zh' -%}
-  {%- assign name = item.name_zh | default: item.name -%}
-  {%- assign summary = item.summary_zh | default: item.summary -%}
-  {%- assign detail_url = item.url_zh | default: item.url -%}
-  {%- assign tags = item.tags_zh | default: item.tags -%}
-{%- endif -%}
 {%- assign status_key = item.status | downcase | replace: ' ', '_' -%}
 <article class="software-card">
   <div class="software-card__meta">

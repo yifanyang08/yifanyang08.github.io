@@ -1,21 +1,6 @@
 {%- assign software = site.data.software | where: 'id', page.software_id | first -%}
 {%- assign page_lang = page.lang | default: site.lang -%}
 {%- assign t = site.data.i18n[page_lang] | default: site.data.i18n['en'] -%}
-{%- if page_lang == 'zh' -%}
-  {%- assign name = software.name_zh | default: software.name -%}
-  {%- assign summary = software.summary_zh | default: software.summary -%}
-  {%- assign overview = software.overview_zh | default: software.overview -%}
-  {%- assign motivation = software.motivation_zh | default: software.motivation -%}
-  {%- assign features = software.features_zh | default: software.features -%}
-  {%- assign tags = software.tags_zh | default: software.tags -%}
-  {%- assign requirements = software.requirements_zh | default: software.requirements -%}
-  {%- assign download = software.download_zh | default: software.download -%}
-  {%- assign documentation = software.documentation_zh | default: software.documentation -%}
-  {%- assign privacy = software.privacy_zh | default: software.privacy -%}
-  {%- assign version = software.version_zh | default: software.version -%}
-  {%- assign license = software.license_zh | default: software.license -%}
-  {%- assign citation = software.citation_zh | default: software.citation -%}
-{%- else -%}
   {%- assign name = software.name -%}
   {%- assign summary = software.summary -%}
   {%- assign overview = software.overview -%}
@@ -29,7 +14,6 @@
   {%- assign version = software.version -%}
   {%- assign license = software.license -%}
   {%- assign citation = software.citation -%}
-{%- endif -%}
 {%- assign status_key = software.status | downcase | replace: ' ', '_' -%}
 <article class="software-detail">
   <section class="hero hero--compact">
