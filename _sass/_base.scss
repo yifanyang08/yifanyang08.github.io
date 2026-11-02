@@ -641,6 +641,10 @@ figcaption {
   grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1fr);
 }
 
+.contact-layout--narrow-photo {
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+}
+
 .contact-panel h2 {
   font-size: 1.1rem;
   margin-top: 1.2rem;
